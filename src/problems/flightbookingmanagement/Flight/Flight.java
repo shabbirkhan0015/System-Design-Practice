@@ -12,15 +12,14 @@ public class Flight {
     private final String destination;
     private final LocalDateTime departureTime;
     private final LocalDateTime arrivalTime;
-    private final List<Seat> availbaleSeat;
 
-    public Flight(String flightNumber, String source, String destination, LocalDateTime departureTime, LocalDateTime arrivalTime, List<Seat> availbaleSeat) {
+    public Flight(String flightNumber, String source, String destination, LocalDateTime departureTime, LocalDateTime arrivalTime) {
         this.flightNumber = flightNumber;
         this.source = source;
         this.destination = destination;
         this.departureTime = departureTime;
         this.arrivalTime = arrivalTime;
-        this.availbaleSeat = availbaleSeat;
+
     }
 
     public String getFlightNumber() {
@@ -43,7 +42,4 @@ public class Flight {
         return arrivalTime;
     }
 
-    public List<Seat> getAvailbaleSeat() {
-        return availbaleSeat;
-    }
 }

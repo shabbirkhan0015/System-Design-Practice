@@ -6,10 +6,11 @@ public class Seat {
     private final SeatType seatType;
     private SeatStatus seatStatus;
 
-    public Seat(SeatStatus seatStatus, SeatType seatType, String seatNumber) {
+    public Seat( String seatNumber,  SeatType seatType, SeatStatus seatStatus) {
+        this.seatNumber = seatNumber;
         this.seatStatus = seatStatus;
         this.seatType = seatType;
-        this.seatNumber = seatNumber;
+
     }
 
     public void reserve()

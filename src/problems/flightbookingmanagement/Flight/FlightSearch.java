@@ -7,6 +7,9 @@ import java.util.stream.Collectors;
 public class FlightSearch {
 
     private List<Flight> flights;
+    public FlightSearch(List<Flight> flights) {
+        this.flights = flights;
+    }
 
     public List<Flight> searchFlights(String source, String destination, LocalDate date) {
         return flights.stream()
